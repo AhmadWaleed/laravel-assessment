@@ -1,4 +1,4 @@
-# About Assessment
+ # About Assessment
 
 ## Solution
 
@@ -35,16 +35,19 @@ $ sail artisan tests
 
 ## Usage
 - Import json file
+
 This command will neatly transfers the contents of the JSON file to a database into chunks using background processes.
 ```bash
 sail artisan import:json /path/to/file.json
 ```
 - Abort import process
+
 bort import operation for given transaction id.
 ```bash
 sail artisan abort:import id (you can get id from import:json command)
 ```
 - Import information
+
 Provided bulk import info like how many records has been processed or remaining etc.
 ```bash
 sail artisan import:info id (you can get id from import:json command)
